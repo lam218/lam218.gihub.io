@@ -1,0 +1,115 @@
+.tyreCard .card {
+    min-width: 250px;
+    max-width: 380px;
+    height: 475px;
+    border: none;
+    border-radius: 1px;
+    box-shadow: 0px 1px 2px 0px var(--shadow);
+    margin: 5px;
+}
+
+.ratingList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ratingItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.ratingItem p {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.ratingItem p span {
+    font-size: 0.6em;
+}
+
+.tyreChoose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tyrePrice p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: var(--disabled-text-color);
+    font-family: var(--font-family);
+}
+
+.tyrePrice h3 {
+    font-weight: bold;
+    font-family: var(--font-family);
+    margin-bottom: 0px;
+}
+
+.tyreRating {
+    background: var(--light-grey);
+    margin: 0px;
+}
+
+.tyreInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tyreInfo h3 {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-family: var(--font-family);
+    margin-bottom: 0px;
+}
+
+.tyreInfo h4 {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+}
+
+.tyreInfo h5 {
+    color: var(--disabled-text-color);
+    font-size: 0.9em;
+    font-family: var(--font-family);
+    margin-bottom: 0px;
+}
+
+.tyreImg {
+    display: flex;
+    justify-content: center;
+}
+
+.tyreImg img {
+    height: 130px;
+}
+
+.tyreFooter {
+    border-top: 0px;
+}
+
+.tyreHeader {
+    border-bottom: 0px;
+}
+
+.tyreSelect {
+    margin: 0px;
+}
+
+.brandName {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+}
+
+.tyreHeader {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+.badge {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 0 20px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+.primary.badge {
+    background: var(--primary-color);
+}
+
+.success.badge {
+    background: var(--success-color);
+}

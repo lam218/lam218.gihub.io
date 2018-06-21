@@ -1,0 +1,19 @@
+.input.search {
+    border-right: 0px;
+    color: var(--secondary-active-color);
+}
+
+.searchInput {
+    background: var(--white);
+}
+
+.input-group-text {
+    background: white;
+    border: 1px solid var(--secondary-color);
+}
+
+.selectedSearch .input-group-text {
+    background: var(--secondary-active-color);
+    border: 1px solid var(--secondary-active-color);
+    color: var(--white);
+}

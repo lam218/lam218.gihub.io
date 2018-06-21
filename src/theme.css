@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #d84200;
+    --primary-active-color: #b33700;
+    --primary-dark-color: #810100;
+    --secondary-color: #484645;
+    --secondary-active-color: #282828;
+    --dark-grey: #a6a6a6;
+    --light-grey: #dedede;
+    --shadow: #999;
+    --white: #ffffff;
+    --success-color: #5fa90e;
+    --success-active-color: #467f07;
+    --error-color: #b30000;
+    --font-family: "Avenir Next", "Arial", sans-serif;
+    --text-color: #282828;
+    --selected-text-color: #282828;
+    --disabled-text-color: #a6a6a6;
+    --font-size-base: 0.9em;
+    --font-size-lg: var(--font-size-base) + 0.1em;
+    --button-height: 40px;
+    --line-height-base: 1.5;
+    --border-radius-base: 4px;
+    --border-radius-sm: 2px;
+    --font-weight: 500;
+}
+
+/* $primary-color: #d84200;
+$primary-active-color: #b33700;
+$secondary-color: #484645;
+$secondary-active-color: #282828;
+$dark-grey: #a6a6a6;
+$light-grey: #dedede;
+$success-color: #5fa90e;
+$error-color: #b30000;
+$font-family: "Avenir Next",
+"Arial",
+sans-serif;
+$text-color: #484645;
+$selected-text-color: #282828;
+$disabled-text-color: #a6a6a6;
+$font-size-base: 14px;
+$font-size-lg: $font-size-base+2px;
+$button-height: 40px;
+$line-height-base: 1.5;
+$border-radius-base: 4px;
+$border-radius-sm: 2px; */
+
+/* @primary-color : #D84200;
+@primary-active-color: #b33700;
+@secondary-color: #484645;
+@secondary-active-color: #282828;
+@dark-grey: #a6a6a6;
+@light-grey: #dedede;
+@success-color : #5FA90E;
+@error-color : #B30000;
+// ------ Base & Require ------
+// @body-background : #fff;
+// @component-background : #fff;
+@font-family : "Avenir Next",
+"Arial",
+sans-serif;
+@text-color : #484645;
+@selected-text-color : #282828;
+@disabled-text-color : #A6A6A6;
+@font-size-base : 14px;
+@font-size-lg : @font-size-base +2px;
+@button-height: 40px;
+@line-height-base : 1.5;
+@border-radius-base : 4px;
+@border-radius-sm : 2px; */

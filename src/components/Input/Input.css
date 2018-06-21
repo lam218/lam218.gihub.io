@@ -1,0 +1,28 @@
+.input {
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+}
+
+.input:focus {
+    border: 1px solid var(--secondary-active-color);
+    color: var(--secondary-active-color);
+    outline: none;
+    box-shadow: transparent;
+}
+
+.successInput {
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.errorInput {
+    border: 1px solid var(--primary-active-color);
+    color: var(--primary-active-color);
+}
+
+.disabledInput {
+    border: 1px solid var(--light-grey);
+    color: var(--light-grey);
+}

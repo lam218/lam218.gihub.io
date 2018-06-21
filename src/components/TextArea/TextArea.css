@@ -1,0 +1,15 @@
+.textInput:focus {
+    border: 1px solid #282828;
+    color: #282828;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: transparent;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

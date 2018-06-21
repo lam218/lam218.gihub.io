@@ -1,0 +1,12 @@
+.leftList {
+  float: left;
+}
+
+.rightList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li.list-group-item {
+  border: 0px;
+}

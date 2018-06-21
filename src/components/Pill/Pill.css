@@ -1,0 +1,94 @@
+.pill {
+  margin: 10px;
+  padding: 0px 15px 1px;
+  width: max-content;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.pill.filter {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.pill.success {
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+}
+
+.pill.default {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.pill.error {
+  border: 1px solid var(--error-color);
+}
+
+.pill .pillText {
+  margin: 0 5px;
+  font-family: var(--font-family);
+}
+
+.pill.filter .pillText {
+  color: var(--primary-color);
+}
+
+.pill.default .pillText {
+  color: var(--secondary-color);
+}
+
+.pill.success .pillText {
+  color: var(--success-color);
+}
+
+.pill.error .pillText {
+  color: var(--error-color);
+}
+
+.pill.filter a.pillClose {
+  margin-left: 5px;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.pill.filter a.pillClose:hover {
+  color: var(--primary-active-color);
+}
+
+.pill.default a.pillClose {
+  margin-left: 5px;
+  color: var(--secondary-color);
+  opacity: 1;
+}
+
+.pill.default a.pillClose:hover {
+  color: var(--secondary-active-color);
+}
+
+.pill.success a.pillClose {
+  margin-left: 5px;
+  color: var(--success-color);
+  opacity: 1;
+}
+
+.pill.success a.pillClose:hover {
+  color: var(--success-active-color);
+}
+
+.pill.error a.pillClose {
+  margin-left: 5px;
+  color: var(--error-color);
+  opacity: 1;
+}
+
+.pill.error a.pillClose:hover {
+  color: var(--primary-dark-color);
+}
+
+a {
+  cursor: pointer;
+  opacity: 0.5;
+}
