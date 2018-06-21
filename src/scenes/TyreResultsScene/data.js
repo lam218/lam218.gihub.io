@@ -9,7 +9,7 @@ export default [
     tyreLabel: "185/60R15",
     price: "£65",
     tyreImg:
-      "https://tyrepricemalaysia.com.my/image/cache/catalog/tyre-price-malaysia-michelin-tyre-xm2-581x708.png",
+      "https://www.bushtyres.co.uk/revslider/builder/media/e226b-goodride-tyre.png",
     fuelRating: "A",
     wetRating: "B",
     noiseRating: "66",
@@ -26,7 +26,7 @@ export default [
     tyreLabel: "185/60R15",
     price: "£65",
     tyreImg:
-      "https://tyrepricemalaysia.com.my/image/cache/catalog/tyre-price-malaysia-michelin-tyre-xm2-581x708.png",
+      "https://www.bushtyres.co.uk/revslider/builder/media/e226b-goodride-tyre.png",
     fuelRating: "A",
     wetRating: "B",
     noiseRating: "66",
@@ -43,7 +43,7 @@ export default [
     tyreLabel: "185/60R15",
     price: "£65",
     tyreImg:
-      "https://tyrepricemalaysia.com.my/image/cache/catalog/tyre-price-malaysia-michelin-tyre-xm2-581x708.png",
+      "https://www.bushtyres.co.uk/revslider/builder/media/e226b-goodride-tyre.png",
     fuelRating: "A",
     wetRating: "B",
     noiseRating: "66",
@@ -60,7 +60,7 @@ export default [
     tyreLabel: "185/60R15",
     price: "£65",
     tyreImg:
-      "https://tyrepricemalaysia.com.my/image/cache/catalog/tyre-price-malaysia-michelin-tyre-xm2-581x708.png",
+      "https://www.bushtyres.co.uk/revslider/builder/media/e226b-goodride-tyre.png",
 
     noiseRating: "66",
     speedRating: "Y",

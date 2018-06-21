@@ -24,7 +24,7 @@ stories.add("tyre card with logo", () => (
     price={text("Tyre Price", "£65")}
     tyreImg={text(
       "Tyre Image",
-      "https://tyrepricemalaysia.com.my/image/cache/catalog/tyre-price-malaysia-michelin-tyre-xm2-581x708.png"
+      "https://www.bushtyres.co.uk/revslider/builder/media/e226b-goodride-tyre.png"
     )}
     fuelRating={"A"}
     wetRating={"B"}
