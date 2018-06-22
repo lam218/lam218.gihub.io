@@ -9,7 +9,7 @@
 }
 
 .pill.filter {
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
 
@@ -50,7 +50,6 @@
 
 .pill.filter a.pillClose {
   margin-left: 5px;
-  margin-bottom: 2px;
   color: var(--primary-color);
   opacity: 1;
 }

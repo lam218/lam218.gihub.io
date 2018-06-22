@@ -6,7 +6,7 @@ import { action } from "@storybook/addon-actions";
 import HorizontalCard from "./HorizontalCard";
 import "./HorizontalCard.css";
 
-storiesOf("Horizontal Card", module).add("Car card", () => (
+storiesOf("Horizontal Card", module).add("Card card", () => (
   <HorizontalCard
     type="car"
     buttonMessage="Back to search"

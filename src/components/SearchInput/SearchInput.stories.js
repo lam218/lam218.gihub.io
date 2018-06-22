@@ -12,9 +12,9 @@ import SearchInput from "./SearchInput";
 import "./SearchInput.css";
 
 stories
-  .add("Search with placeholder", () => (
+  .add("Input with placeholder", () => (
     <SearchInput placeholder={text("Placeholder", "Search")} />
   ))
-  .add("Search input with Value", () => (
-    <SearchInput value={text("Value", "Tyres")} />
+  .add("Selected search input", () => (
+    <SearchInput value={text("Value", "Tyres")} isSelected />
   ));
