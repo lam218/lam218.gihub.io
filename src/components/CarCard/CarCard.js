@@ -1,14 +1,13 @@
 //@flow
 import React from "react";
 
-import { Card } from "reactstrap";
+import Card from "../Card";
 import ListGroupLR from "../ListGroupLR";
 
 type Props = {
   carImg?: string,
   carDesc?: string,
-  carList: [{ right: string, left: string }],
-  lines?: boolean
+  carList: [{ right: string, left: string }]
 };
 
 const CarCard = (props: Props) => (

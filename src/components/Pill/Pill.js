@@ -1,6 +1,8 @@
 // @flow
 import React from "react";
 
+import Close from "../../../public/icons/Cross-Red";
+
 type Props = {
   pillText: string,
   removePill: (text: string, pillKey?: string) => void,
@@ -33,7 +35,7 @@ const Pill = (props: Props) => (
         }}
         className="pillClose"
       >
-        x
+        <Close />
       </a>
     ) : null}
   </div>
