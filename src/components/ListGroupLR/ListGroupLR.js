@@ -18,7 +18,7 @@ const ListGroupLR = (props: Props) => (
         </span>
 
         <span className="rightList">{list.right}</span>
-        {props.lines && <hr />}
+        {props.List.length - 1 !== i && props.lines && <hr />}
       </ListGroupItem>
     ))}
   </ListGroup>

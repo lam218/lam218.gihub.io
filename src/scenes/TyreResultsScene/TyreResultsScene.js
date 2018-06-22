@@ -50,52 +50,54 @@ export default class TyreResultsScene extends Component {
         <h1 style={{ fontSize: "2.5em", fontWeight: "bold" }}>
           Here are manufacturer recommended tyres for your Hyundai
         </h1>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "flex-end",
-            margin: "20px 0"
-          }}
-        >
-          <h3
-            style={{
-              flex: "1",
-              fontSize: "1.5em"
-            }}
-          >
-            {`${tyreCard.length} tyres available`}
-          </h3>
-
-          <div className={"dropdownFilter"}>
-            <Dropdown
-              selectItem={this.selectItem}
-              itemKey={"price"}
-              dropdownText={`Sort by Price`}
-              items={filterItems}
-            />
-          </div>
-          <div className={"dropdownFilter"}>
-            <Dropdown
-              dropdownText={`Filters (${
-                filterItems.filter(item => item.isSelected).length
-              })`}
-              items={filterItems}
-              selectItem={this.selectItem}
-              itemKey={"filter"}
-            />
-          </div>
-        </div>
-        {this.state.pillText.map(text => (
-          <Pill
-            filter
-            pillText={text}
-            pillKey={"pill"}
-            removePill={this.removePill}
-          />
-        ))}
 
         <div>
+          <Row>
+            <Col xl="12" sm="12" md="4" lg="6" xl="8">
+              <h3
+                style={{
+                  flex: "1",
+                  fontSize: "1.5em"
+                }}
+              >
+                {`${tyreCard.length} tyres available`}
+              </h3>
+            </Col>
+            <Col xs="6" sm="6" md="4" lg="3" xl="2">
+              <div style={{ marginRight: "10px" }} className={"dropdownFilter"}>
+                <Dropdown
+                  selectItem={this.selectItem}
+                  itemKey={"price"}
+                  dropdownText={`Sort by Price`}
+                  items={filterItems}
+                />
+              </div>
+            </Col>
+            <Col xs="6" sm="6" md="4" lg="3" xl="2">
+              <div style={{ marginLeft: "10px" }} className={"dropdownFilter"}>
+                <Dropdown
+                  dropdownText={`Filters (${
+                    filterItems.filter(item => item.isSelected).length
+                  })`}
+                  items={filterItems}
+                  selectItem={this.selectItem}
+                  itemKey={"filter"}
+                />
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            {this.state.pillText.map(text => (
+              <Col>
+                <Pill
+                  filter
+                  pillText={text}
+                  pillKey={"pill"}
+                  removePill={this.removePill}
+                />
+              </Col>
+            ))}
+          </Row>
           <Row>
             {tyreCard.map(tyre => (
               <Col sm="12" md="6" lg="4" xl="3">

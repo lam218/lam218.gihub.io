@@ -7,8 +7,8 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-import ChevronUp from "react-icons/lib/io/chevron-up";
-import ChevronDown from "react-icons/lib/io/chevron-down";
+import ArrowUp from "../../../public/icons/Arrow-Up";
+import ArrowDown from "../../../public/icons/Arrow-Down";
 import "./Dropdown.css";
 
 type Props = {
@@ -55,19 +55,27 @@ export default class ourDropdown extends React.Component<Props, State> {
           >
             <span className="dropdownText">{this.props.dropdownText}</span>
             {this.state.dropdownOpen ? (
-              <ChevronUp
+              <div
                 style={{
-                  marginBottom: "5px",
-                  marginRight: "10px"
+                  marginRight: "10px",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: "2px"
                 }}
-              />
+              >
+                <ArrowUp />
+              </div>
             ) : (
-              <ChevronDown
+              <div
                 style={{
-                  marginTop: "2px",
-                  marginRight: "10px"
+                  marginRight: "10px",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: "2px"
                 }}
-              />
+              >
+                <ArrowDown />
+              </div>
             )}
           </DropdownToggle>
 

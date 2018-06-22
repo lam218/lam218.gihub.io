@@ -2,6 +2,8 @@
 import React from "react";
 
 import { InputGroup, InputGroupAddon, Input } from "reactstrap";
+import SearchBlack from "../../../public/icons/Search-Black";
+import SearchWhite from "../../../public/icons/Search-White";
 
 type Props = {
   type: string,
@@ -25,12 +27,19 @@ export default class searchInput extends React.Component<Props, State> {
     this.select = this.select.bind(this);
   }
   select: () => void = () => {
-    this.setState({ isSelected: !this.state.isSelected });
+    this.setState({ isSelected: true });
+  };
+  notSelect: () => void = () => {
+    this.setState({ isSelected: false });
   };
 
   render() {
     return (
-      <InputGroup onClick={() => this.select()} onBlur={() => this.select()}>
+      <InputGroup
+        className="searchBox"
+        onClick={() => this.select()}
+        onBlur={() => this.notSelect()}
+      >
         <Input
           type={this.props.type}
           placeholder={this.props.placeholder}
@@ -42,7 +51,7 @@ export default class searchInput extends React.Component<Props, State> {
           className={this.state.isSelected ? "selectedSearch" : ""}
           addonType="append"
         >
-          S
+          {this.state.isSelected ? <SearchWhite /> : <SearchBlack />}
         </InputGroupAddon>
       </InputGroup>
     );
