@@ -1,0 +1,66 @@
+.tyreSizeCard .card {
+    /* max-width: 300px; */
+    min-width: 280px;
+    border-radius: 1px;
+    border: 0px;
+    box-shadow: 0px 1px 2px 0px var(--shadow);
+    cursor: pointer;
+}
+
+.tyreSizeCard .card .card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.wheelContainer {
+    margin-left: 20px;
+    width: 100%;
+    font-size: var(--font-size-base);
+}
+
+.wheelSize {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.wheelSize,
+.tyreSize {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wheelVar {
+    font-weight: bold;
+}
+
+.wheelVar.selected {
+    color: var(--primary-color);
+}
+
+.tyreSizeCard.selected {
+    border: 1px solid var(--primary-color);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .wheelIcon {
+        display: none;
+    }
+    .tyreSizeCard .card .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wheelSize,
+    .tyreSize {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wheelSize {
+        padding-bottom: 10px;
+    }
+    .tyreSize {
+        padding-top: 10px;
+    }
+}
