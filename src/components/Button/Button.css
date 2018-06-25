@@ -1,89 +1,90 @@
 * {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body {
-    padding: 40px 100px;
+  padding: 40px 100px;
 }
 
 .button {
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin: 10px;
-    padding: 0px 25px 1px;
-    height: 45px;
-    border-radius: 30px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: var(--font-size-base);
-    letter-spacing: 0.5px;
-    line-height: var(--font-size-lg);
-    color: var(--white);
-    background-color: var(--primary-color);
-    box-shadow: inset 0px -3px 0px 0px var(--primary-active-color);
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+  margin: 10px;
+  padding: 0px 25px 1px;
+  height: 45px;
+  border-radius: 30px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.5px;
+  line-height: var(--font-size-lg);
+  color: var(--white);
+  background-color: var(--primary-color);
+  box-shadow: inset 0px -3px 0px 0px var(--primary-active-color);
 }
 
 .button:hover {
-    background-color: var(--primary-active-color);
-    box-shadow: inset 0px -3px 0px 0px var(--primary-color);
+  background-color: var(--primary-active-color);
+  box-shadow: inset 0px -3px 0px 0px var(--primary-color);
 }
 
 .secondary {
-    background-color: var(--secondary-color);
-    box-shadow: inset 0px -3px 0px 0px var(--secondary-active-color);
+  background-color: var(--secondary-color);
+  box-shadow: inset 0px -3px 0px 0px var(--secondary-active-color);
 }
 
 .secondary:hover {
-    background-color: var(--secondary-active-color);
-    box-shadow: inset 0px -3px 0px 0px var(--secondary-color);
+  background-color: var(--secondary-active-color);
+  box-shadow: inset 0px -3px 0px 0px var(--secondary-color);
 }
 
 .tertiary {
-    background-color: var(--white);
-    color: var(--primary-color);
-    box-shadow: none;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0px 1px 2px 0px var(--shadow);
+  background-color: var(--white);
+  color: var(--primary-color);
+  box-shadow: none;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 1px 2px 0px var(--shadow);
 }
 
 .tertiary:hover {
-    background-color: var(--white);
-    color: var(--primary-active-color);
-    box-shadow: 0px 1px 2px 0px var(--shadow);
-    border: 2px solid var(--primary-active-color);
+  background-color: var(--white);
+  color: var(--primary-active-color);
+  box-shadow: 0px 1px 2px 0px var(--shadow);
+  border: 2px solid var(--primary-active-color);
 }
 
 .disabled {
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
-    box-shadow: none;
-    border: none;
-    cursor: default;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  box-shadow: none;
+  border: none;
+  cursor: default;
 }
 
 .disabled:hover {
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
-    box-shadow: none;
-    border: none;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  box-shadow: none;
+  border: none;
 }
 
 .success.button {
-    background-color: var(--success-color);
-    box-shadow: inset 0px -3px 0px 0px var(--success-active-color);
+  background-color: var(--success-color);
+  box-shadow: inset 0px -3px 0px 0px var(--success-active-color);
 }
 
 .success.button:hover {
-    background-color: var(--success-active-color);
-    box-shadow: inset 0px -3px 0px 0px var(--success-color);
+  background-color: var(--success-active-color);
+  box-shadow: inset 0px -3px 0px 0px var(--success-color);
 }
 
 .irreversible {
-    background-color: var(--primary-active-color);
-    box-shadow: inset 0px -3px 0px 0px var(--primary-dark-color);
+  background-color: var(--primary-active-color);
+  box-shadow: inset 0px -3px 0px 0px var(--primary-dark-color);
 }
 
 .irreversible:hover {
-    background-color: var(--primary-dark-color);
-    box-shadow: inset 0px -3px 0px 0px var(--primary-active-color);
+  background-color: var(--primary-dark-color);
+  box-shadow: inset 0px -3px 0px 0px var(--primary-active-color);
 }

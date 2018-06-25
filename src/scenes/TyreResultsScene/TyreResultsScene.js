@@ -14,13 +14,17 @@ let filterItems = [
   { text: "2", isSelected: false },
   { text: "3", isSelected: false }
 ];
+type State = {
+  pillText: string[],
+  filterItems: [{ text: string, isSelected: boolean }]
+};
 
-export default class TyreResultsScene extends Component {
+export default class TyreResultsScene extends Component<{}, State> {
   state = {
     pillText: [],
     filterItems: filterItems
   };
-  selectItem = (text, isSelected, key) => {
+  selectItem = (text: string, isSelected: boolean, key: string) => {
     const selected = _.findWhere(this.state.filterItems, { text: text });
     selected.isSelected = !selected.isSelected;
 
@@ -34,7 +38,7 @@ export default class TyreResultsScene extends Component {
       }
     }
   };
-  removePill = (text, key) => {
+  removePill = (text: string, key: string) => {
     if (key == "pill") {
       const selected = _.findWhere(this.state.filterItems, { text: text });
       selected.isSelected = !selected.isSelected;
@@ -101,7 +105,7 @@ export default class TyreResultsScene extends Component {
                 filter
                 pillText={text}
                 pillKey={"pill"}
-                removePill={this.removePill}
+                removePill={this.removePill(text, "pill")}
               />
             ))}
           </Col>
