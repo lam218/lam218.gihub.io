@@ -20,7 +20,8 @@ type Props = {
   cardHeader?: React.Node,
   className?: string,
   headerClassName?: string,
-  footerClassName?: string
+  footerClassName?: string,
+  bodyClassName?: string
 };
 
 const ourCard = (props: Props) => {
@@ -35,7 +36,7 @@ const ourCard = (props: Props) => {
             {props.cardHeader}
           </CardHeader>
         )}
-        <CardBody>
+        <CardBody className={props.bodyClassName}>
           {props.cardTitle && <CardTitle>{props.cardTitle}</CardTitle>}
           {props.cardSubtitle && (
             <CardSubtitle>{props.cardSubtitle}</CardSubtitle>

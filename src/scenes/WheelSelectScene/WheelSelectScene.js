@@ -37,7 +37,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
   render() {
     return (
       <Container>
-        <Row style={{ minWidth: "250px" }}>
+        {/* <Row style={{ minWidth: "250px" }}>
           <Col>
             <Label for={"registration number"} labelText={"Reg. Number"}>
               <Input value={this.state.regValue} placeholder="Reg. Number" />
@@ -53,8 +53,17 @@ export default class WheelSelectScene extends React.Component<{}, State> {
           <Col style={{ display: "flex" }}>
             <Button className="searchButtonTyre">Search</Button>
           </Col>
-        </Row>
-        <CarCard carImg={carProps.carImg} carList={carProps.carList} />
+        </Row> */}
+        <h2>
+          We'll find the right tyres for your {carProps.carList[0].right},{" "}
+          {this.state.regValue}.
+        </h2>
+        <a className="notCarLink">Not your car?</a>
+        <CarCard
+          // horizontalImg
+          carImg={carProps.carImg}
+          carList={carProps.carList}
+        />
         <div style={{ minWidth: "250px" }}>
           <h2>Which wheels does your car have?</h2>
           <p>
@@ -70,7 +79,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
             side of it. Make sure the option you select here matched the one on
             your tyres.
           </p>
-          <WheelCard tyreSize={"205 / 55 R16W"} />
+          <WheelCard />
         </div>
       </Container>
     );

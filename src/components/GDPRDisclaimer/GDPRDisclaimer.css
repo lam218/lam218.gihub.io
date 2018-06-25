@@ -1,0 +1,43 @@
+.GDPR {
+  padding: 20px;
+  border: 2px solid var(--light-grey);
+  border-radius: 4px;
+}
+
+.GDPR:hover {
+  border-color: var(--secondary-color);
+}
+
+.blackQ {
+  display: none;
+}
+
+.GDPRHeader {
+  display: flex;
+}
+
+.GDPRHeader h4 {
+  color: var(--dark-grey);
+  margin-left: 10px;
+}
+
+.GDPRPara {
+  color: var(--dark-grey);
+}
+
+.GDPR:hover .GDPRPara {
+  color: var(--text-color);
+}
+
+.GDPR:hover h4 {
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+.GDPR:hover .greyQ {
+  display: none;
+}
+
+.GDPR:hover .blackQ {
+  display: block;
+}

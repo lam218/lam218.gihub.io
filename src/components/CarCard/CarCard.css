@@ -11,3 +11,19 @@
     font-family: var(--font-family);
     color: var(--text-color);
 }
+
+@media only screen and (min-width: 600px) {
+    .carCard .card {
+        min-width: 600px;
+        max-width: 1000px;
+    }
+    .list-group {
+        width: 400px;
+        margin-left: 20px;
+    }
+    .card-body.bodyCarCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

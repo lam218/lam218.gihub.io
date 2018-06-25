@@ -31,4 +31,18 @@ storiesOf("Car Card", module)
         { right: "2012", left: "Year" }
       ]}
     />
+  ))
+  .add("horizontal car card with image(if we get it)", () => (
+    <CarCard
+      horizontalImg
+      carImg={"https://cdn.euroncap.com/media/29355/hyundai-i30-359-235.jpg"}
+      carList={[
+        { right: "Hyundai", left: "Make" },
+        { right: "i30 Active Blue Drive CRD", left: "Model" },
+        { right: "5 Door Hatchback", left: "Body" },
+        { right: "White", left: "Colour" },
+        { right: "BG62LDZ", left: "Reg" },
+        { right: "2012", left: "Year" }
+      ]}
+    />
   ));
