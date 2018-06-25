@@ -7,7 +7,7 @@ import Label from "../../components/Label";
 import Input from "../../components/Input";
 import CarCard from "../../components/CarCard";
 import TyreSizeCard from "../../components/TyreSizeCard";
-import WheelCard from "../../components/WheelCard/WheelCard";
+import GDPRDisclaimer from "../../components/GDPRDisclaimer";
 
 type State = {
   regValue: string,
@@ -55,7 +55,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
           </Col>
         </Row> */}
         <h2>
-          We'll find the right tyres for your {carProps.carList[0].right},{" "}
+          We'll find the right tyres for your {carProps.carList[0].right},
           {this.state.regValue}.
         </h2>
         <a className="notCarLink">Not your car?</a>
@@ -79,7 +79,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
             side of it. Make sure the option you select here matched the one on
             your tyres.
           </p>
-          <WheelCard />
+          <GDPRDisclaimer />
         </div>
       </Container>
     );

@@ -14,6 +14,7 @@ const GDPRDisclaimer = () => (
 
       <h4>Where do we get this data from?</h4>
     </div>
+
     <p className="GDPRPara">we get it from places and also things.</p>
   </div>
 );
