@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 
-import Close from "../../../public/icons/Cross-Red";
+import Close from "../../../public/icons/Cross-Orange";
 
 type Props = {
   pillText: string,
