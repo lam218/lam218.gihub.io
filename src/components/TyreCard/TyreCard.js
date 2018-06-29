@@ -5,6 +5,12 @@ import ListGroupLR from "../ListGroupLR";
 import Card from "../Card";
 import Button from "../Button";
 import Tooltip from "../Tooltip";
+//import icons
+import FuelIcon from "../../../public/icons/Tyre-Card-Fuel";
+import LoadIcon from "../../../public/icons/Tyre-Card-Load";
+import NoiseIcon from "../../../public/icons/Tyre-Card-Noise";
+import SpeedIcon from "../../../public/icons/Tyre-Card-Speed";
+import WetIcon from "../../../public/icons/Tyre-Card-Wet";
 
 type Props = {
   visibleLogo?: boolean,
@@ -62,7 +68,7 @@ const TyreCard = (props: Props) => (
                 placement="top"
                 tooltipText="Fuel Rating"
               >
-                E
+                <FuelIcon />
               </Tooltip>
               <p>{props.fuelRating}</p>
             </div>
@@ -74,7 +80,7 @@ const TyreCard = (props: Props) => (
                 placement="top"
                 tooltipText="Wet Rating"
               >
-                W
+                <WetIcon />
               </Tooltip>
 
               <p>{props.wetRating}</p>
@@ -87,7 +93,7 @@ const TyreCard = (props: Props) => (
                 placement="top"
                 tooltipText="Noise Rating"
               >
-                N
+                <NoiseIcon />
               </Tooltip>
 
               <p>
@@ -103,7 +109,7 @@ const TyreCard = (props: Props) => (
                 placement="top"
                 tooltipText="Speed Rating"
               >
-                S
+                <SpeedIcon />
               </Tooltip>
 
               <p>{props.speedRating}</p>
@@ -116,7 +122,7 @@ const TyreCard = (props: Props) => (
                 placement="top"
                 tooltipText="Load Rating"
               >
-                L
+                <LoadIcon />
               </Tooltip>
 
               <p>{props.loadRating}</p>

@@ -80,6 +80,6 @@ input[type="checkbox"]:checked ~ .checkmark:after {
   color: var(--selected-text-color);
 }
 
-.checkText.disabled {
+/* .checkText.disabled {
   color: var(--disabled-text-color);
-}
+} */

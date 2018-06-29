@@ -7,7 +7,9 @@ import TextArea from "./TextArea";
 import "./TextArea.css";
 
 storiesOf("Text area", module)
-  .add("basic", () => <TextArea className="textInput" />)
+  .add("basic", () => (
+    <TextArea className="textInput" placeholder="Type here..." />
+  ))
   .add("fixed to number of rows", () => (
     <TextArea className="textInput" maxHeight={"100px"} />
   ));
