@@ -5,7 +5,7 @@ import ListGroupLR from "../ListGroupLR";
 import Card from "../Card";
 import Button from "../Button";
 import Tooltip from "../Tooltip";
-//import icons
+
 import FuelIcon from "../../../public/icons/Tyre-Card-Fuel";
 import LoadIcon from "../../../public/icons/Tyre-Card-Load";
 import NoiseIcon from "../../../public/icons/Tyre-Card-Noise";

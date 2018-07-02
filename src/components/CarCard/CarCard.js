@@ -14,7 +14,7 @@ type Props = {
 const CarCard = (props: Props) => (
   <div>
     {props.horizontalImg ? (
-      <Card className="carCard" bodyClassName="bodyCarCard">
+      <Card className="horizontal carCard" bodyClassName="bodyCarCard">
         <img src={props.carImg} alt={props.carDesc} />
         <ListGroupLR List={props.carList} lines />
       </Card>

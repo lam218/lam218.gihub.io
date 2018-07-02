@@ -11,5 +11,9 @@ storiesOf("Text area", module)
     <TextArea className="textInput" placeholder="Type here..." />
   ))
   .add("fixed to number of rows", () => (
-    <TextArea className="textInput" maxHeight={"100px"} />
+    <TextArea
+      placeholder="Type here..."
+      className="textInput"
+      maxHeight={"100px"}
+    />
   ));
