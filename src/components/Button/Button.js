@@ -27,7 +27,7 @@ const ourButton = (props: Props) => (
               : props.noBack
                 ? "irreversible"
                 : props.disabled
-                  ? "disabled"
+                  ? "disabledButton"
                   : "tertiary"
       }`}
     onClick={e => props.onClick(e)}
