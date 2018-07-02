@@ -53,13 +53,13 @@ export default class ourDropdown extends React.Component<Props, State> {
               cursor: "pointer"
             }}
           >
-            <span className="dropdownText">{this.props.dropdownText}</span>
+            <p className="dropdownText">{this.props.dropdownText}</p>
             {this.state.dropdownOpen ? (
               <div
                 style={{
                   marginRight: "10px",
                   display: "flex",
-                  justifyContent: "center",
+                  alignItems: "center",
                   marginTop: "2px"
                 }}
               >
@@ -70,7 +70,7 @@ export default class ourDropdown extends React.Component<Props, State> {
                 style={{
                   marginRight: "10px",
                   display: "flex",
-                  justifyContent: "center",
+                  alignItems: "center",
                   marginTop: "2px"
                 }}
               >

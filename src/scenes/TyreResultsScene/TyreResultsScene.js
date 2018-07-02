@@ -52,15 +52,21 @@ export default class TyreResultsScene extends Component<{}, State> {
       <Container>
         <Row>
           <Col>
-            <HorizontalCard />
+            <HorizontalCard
+              type="carFound"
+              title="Your Car"
+              link="/"
+              buttonMessage="Change car"
+              message="Finding tyres to fit your Hyundai, BG62 LDZ"
+              imgUrl="https://auto.ndtvimg.com/car-images/medium/maruti-suzuki/baleno/maruti-suzuki-baleno.jpg?v=2"
+              imgDesc="test car"
+            />
           </Col>
         </Row>
 
         <Row>
           <Col>
-            <h1 style={{ fontSize: "2.5em", fontWeight: "bold" }}>
-              Here are manufacturer recommended tyres for your Hyundai
-            </h1>
+            <h1>Here are manufacturer recommended tyres for your Hyundai</h1>
           </Col>
         </Row>
 
@@ -68,15 +74,25 @@ export default class TyreResultsScene extends Component<{}, State> {
           <Col xl="12" sm="12" md="4" lg="6" xl="8">
             <h3
               style={{
-                flex: "1",
-                fontSize: "1.5em"
+                flex: "1"
               }}
             >
               {`${tyreCard.length} tyres available`}
             </h3>
           </Col>
           <Col xs="6" sm="6" md="4" lg="3" xl="2">
-            <div style={{ marginRight: "10px" }} className={"dropdownFilter"}>
+            <div
+              style={{ marginRight: "10px" }}
+              className={"dropdownSortMobile"}
+            >
+              <Dropdown
+                selectItem={this.selectItem}
+                itemKey={"price"}
+                dropdownText={`Sort`}
+                items={filterItems}
+              />
+            </div>
+            <div style={{ marginRight: "10px" }} className={"dropdownSort"}>
               <Dropdown
                 selectItem={this.selectItem}
                 itemKey={"price"}
