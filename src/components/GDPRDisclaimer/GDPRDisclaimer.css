@@ -78,3 +78,19 @@
 .GDPR:hover .blackQ {
     display: flex;
 }
+
+.greyA {
+    display: flex;
+}
+
+.blackA {
+    display: none;
+}
+
+.GDPR:hover .greyA {
+    display: none;
+}
+
+.GDPR:hover .blackA {
+    display: flex;
+}

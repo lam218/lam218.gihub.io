@@ -2,6 +2,7 @@ import React from "react";
 import QuestionMarkGrey from "../../../public/icons/Info-Grey";
 import QuestionMarkBlack from "../../../public/icons/Info-Black";
 import ArrowDown from "../../../public/icons/Arrow-Down";
+import ArrowDownGrey from "../../../public/icons/Arrow-Down-Grey";
 
 export default class GDPRDisclaimer extends React.PureComponent {
   state = {
@@ -23,7 +24,13 @@ export default class GDPRDisclaimer extends React.PureComponent {
             <div className="blackQ">
               <QuestionMarkBlack />
             </div>
-            <h4>Where do we get this data from?</h4> <ArrowDown />
+            <h4>Where do we get this data from?</h4>
+            <div className="greyA">
+              <ArrowDownGrey />
+            </div>
+            <div className="blackA">
+              <ArrowDown />
+            </div>
           </div>
           {this.state.visibleDropdown && (
             <p className="GDPRPara">we get it from places and also things.</p>
