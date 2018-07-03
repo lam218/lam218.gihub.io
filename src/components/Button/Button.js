@@ -15,7 +15,7 @@ type Props = {
 };
 
 const ourButton = (props: Props) => (
-  <Button
+  <button
     className={`button ${props.className ? props.className : ""}
       ${
         props.primary
@@ -26,13 +26,15 @@ const ourButton = (props: Props) => (
               ? "success"
               : props.noBack
                 ? "irreversible"
-                : "tertiary"
+                : props.disabled
+                  ? "disabledButton"
+                  : "tertiary"
       }`}
     onClick={e => props.onClick(e)}
     disabled={props.disabled}
   >
     {props.children}
-  </Button>
+  </button>
 );
 
 export default ourButton;

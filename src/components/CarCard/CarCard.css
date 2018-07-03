@@ -1,31 +1,36 @@
 .carCard .card {
-  min-width: 250px;
-  max-width: 380px;
-  border: none;
-  border-radius: 1px;
-  box-shadow: 0px 1px 2px 0px var(--shadow);
-  display: flex;
-  align-items: center;
+    min-width: 250px;
+    max-width: 380px;
+    border: none;
+    border-radius: 1px;
+    box-shadow: 0px 1px 2px 0px var(--shadow);
+    /* display: flex;
+  align-items: center; */
 }
 
 .list-group-item {
-  font-size: var(--font-size-base);
-  font-family: var(--font-family);
-  color: var(--text-color);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.list-group {
+    justify-content: center;
 }
 
 @media only screen and (min-width: 600px) {
-  .carCard .card {
-    min-width: 600px;
-    max-width: 1000px;
-  }
-  .list-group {
-    width: 400px;
-    margin-left: 20px;
-  }
-  .card-body.bodyCarCard {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+    .horizontal.carCard .card {
+        min-width: 600px;
+        max-width: 1000px;
+    }
+    .horizontal .list-group {
+        width: 400px;
+        margin-left: 20px;
+        justify-content: center;
+    }
+    .card-body.bodyCarCard {
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+    }
 }

@@ -1,43 +1,96 @@
 .GDPR {
-  padding: 20px;
-  border: 2px solid var(--light-grey);
-  border-radius: 4px;
+    padding: 20px;
+    border: 2px solid var(--light-grey);
+    border-radius: 4px;
 }
 
 .GDPR:hover {
-  border-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.GDPRDesktop {
+    display: none;
+}
+
+.GDPRMobile {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .GDPRMobile {
+        display: none;
+    }
+    .GDPRDesktop {
+        display: block;
+    }
+    .GDPRDesktop .GDPRHeader {
+        display: flex;
+        justify-content: flex-start;
+        cursor: default;
+    }
+    .GDPRHeader h4 {
+        color: var(--dark-grey);
+        font-size: var(--font-size-lg);
+        margin-left: 10px;
+    }
 }
 
 .blackQ {
-  display: none;
+    display: none;
 }
 
 .GDPRHeader {
-  display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .GDPRHeader h4 {
-  color: var(--dark-grey);
-  margin-left: 10px;
+    color: var(--dark-grey);
+    font-size: var(--font-size-base);
+    margin: 0px 10px;
 }
 
 .GDPRPara {
-  color: var(--dark-grey);
+    color: var(--dark-grey);
+    font-size: var(--font-size-base);
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .GDPR:hover .GDPRPara {
-  color: var(--text-color);
+    color: var(--text-color);
 }
 
 .GDPR:hover h4 {
-  color: var(--text-color);
-  margin-left: 10px;
+    color: var(--text-color);
+}
+
+.greyQ {
+    display: flex;
 }
 
 .GDPR:hover .greyQ {
-  display: none;
+    display: none;
 }
 
 .GDPR:hover .blackQ {
-  display: block;
+    display: flex;
+}
+
+.greyA {
+    display: flex;
+}
+
+.blackA {
+    display: none;
+}
+
+.GDPR:hover .greyA {
+    display: none;
+}
+
+.GDPR:hover .blackA {
+    display: flex;
 }

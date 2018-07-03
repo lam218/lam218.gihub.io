@@ -8,6 +8,7 @@ body {
 
 .button {
   transition: all 0.3s ease;
+  border: none;
   /* width: 100%; */
   cursor: pointer;
   margin: 10px;
@@ -23,6 +24,7 @@ body {
   background-color: var(--primary-color);
   /* box-shadow: inset 0px -3px 0px 0px var(--primary-active-color); */
 }
+
 @media only screen and (max-width: 480px) {
   .button {
     width: 100%;
@@ -59,7 +61,7 @@ body {
   border: 2px solid var(--primary-active-color);
 }
 
-.disabled {
+.disabledButton {
   background-color: var(--light-grey);
   color: var(--dark-grey);
   box-shadow: none;
@@ -67,7 +69,7 @@ body {
   cursor: default;
 }
 
-.disabled:hover {
+.disabledButton:hover {
   background-color: var(--light-grey);
   color: var(--dark-grey);
   box-shadow: none;
@@ -85,7 +87,7 @@ body {
 }
 
 .irreversible {
-  background-color: var(--irreversibile-color);
+  background-color: var(--error-color);
   /* box-shadow: inset 0px -3px 0px 0px var(--primary-dark-color); */
 }
 
