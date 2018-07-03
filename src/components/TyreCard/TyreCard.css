@@ -43,10 +43,11 @@
     font-family: var(--font-family);
 }
 
-.tyrePrice h3 {
+.tyreChoose .tyrePrice h3 {
     font-weight: bold;
     font-family: var(--font-family);
     margin-bottom: 0px;
+    font-size: 18px;
 }
 
 .tyreRating {
@@ -95,10 +96,6 @@
 
 .tyreHeader {
     border-bottom: 0px;
-}
-
-.tyreSelect {
-    margin: 0px;
 }
 
 .brandName {

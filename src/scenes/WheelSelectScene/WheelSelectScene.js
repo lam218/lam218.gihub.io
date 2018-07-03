@@ -32,55 +32,84 @@ const tyreOptions = [
 export default class WheelSelectScene extends React.Component<{}, State> {
   state = {
     regValue: "CK66ULM",
-    postcodeValue: "CF11 9PG"
+    postcodeValue: "CF11 9PG",
+    selectWheel: false,
+    tyreChoice: ""
   };
+
+  selectWheel(tyreLabel: string) {
+    this.setState({
+      selectWheel: true,
+      tyreChoice: tyreLabel
+    });
+  }
   render() {
     return (
       <Container>
-        {/* <Row style={{ minWidth: "250px" }}>
+        <Row>
           <Col>
-            <Label for={"registration number"} labelText={"Reg. Number"}>
-              <Input value={this.state.regValue} placeholder="Reg. Number" />
-            </Label>
-          </Col>
-          <Col>
-            <Label for={"test input"} labelText={"Postcode"}>
-              <Input value={this.state.postcodeValue} placeholder="Postcode" />
-            </Label>
+            <h2 style={{ marginBottom: "20px" }}>
+              We'll find the right tyres for your {carProps.carList[0].right},
+              {this.state.regValue}.
+              <a className="notCarLink">
+                <p>Not your car?</p>
+              </a>
+            </h2>
           </Col>
         </Row>
-        <Row style={{ minWidth: "250px" }}>
-          <Col style={{ display: "flex" }}>
-            <Button className="searchButtonTyre">Search</Button>
-          </Col>
-        </Row> */}
-        <h2>
-          We'll find the right tyres for your {carProps.carList[0].right},
-          {this.state.regValue}.
-        </h2>
-        <a className="notCarLink">Not your car?</a>
-        <CarCard
-          // horizontalImg
-          carImg={carProps.carImg}
-          carList={carProps.carList}
-        />
-        <div style={{ minWidth: "250px" }}>
-          <h2>Which wheels does your car have?</h2>
-          <p>
-            It's okay if you don't know off the top of your head. We've narrowed
-            it down to these {tyreOptions.length} options
-          </p>
-          {tyreOptions.map(tyre => (
-            <TyreSizeCard tyreSize={tyre.tyreSize} wheelSize={tyre.wheelSize} />
-          ))}
 
-          <p>
-            If you're near you car, please have a look for the markings on the
-            side of it. Make sure the option you select here matched the one on
-            your tyres.
-          </p>
-          <GDPRDisclaimer />
-        </div>
+        <Row>
+          <Col sm={12} lg={8}>
+            <div className="mobileCarCard">
+              <CarCard carImg={carProps.carImg} carList={carProps.carList} />
+            </div>
+            <div className="horizontalCarCard">
+              <CarCard
+                horizontal
+                carImg={carProps.carImg}
+                carList={carProps.carList}
+              />
+            </div>
+          </Col>
+          <Col sm={12} lg={4}>
+            <GDPRDisclaimer />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={12} lg={8}>
+            <h2>Which wheels does your car have?</h2>
+            <p style={{ fontSize: "14px" }}>
+              It's okay if you don't know off the top of your head. We've
+              narrowed it down to these {tyreOptions.length} options.
+            </p>
+          </Col>
+        </Row>
+
+        <Row>
+          {tyreOptions.map(tyre => (
+            <Col xs={12} md={6}>
+              <TyreSizeCard
+                tyreSize={tyre.tyreSize}
+                wheelSize={tyre.wheelSize}
+                onClick={() => this.selectWheel(tyre.tyreSize)}
+              />
+            </Col>
+          ))}
+        </Row>
+        <Row>
+          <Col lg={4}>
+            <p style={{ fontSize: "14px" }}>
+              If you're near you car, please have a look for the markings on the
+              side of it. Make sure the option you select here matched the one
+              on your tyres.
+            </p>
+            <div>Stock tyre image will go here</div>
+          </Col>
+        </Row>
+
+        {this.state.selectWheel && (
+          <Button primary>That's my wheel. find me some tyres!</Button>
+        )}
       </Container>
     );
   }

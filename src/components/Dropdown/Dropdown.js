@@ -83,6 +83,7 @@ export default class ourDropdown extends React.Component<Props, State> {
             {this.props.items.map((item, i) => (
               <div
                 onClick={() => {
+                  console.log("clicked" + item.text);
                   this.props.selectItem(
                     item.text,
                     item.isSelected,

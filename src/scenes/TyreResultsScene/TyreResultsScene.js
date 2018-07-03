@@ -24,6 +24,11 @@ export default class TyreResultsScene extends Component<{}, State> {
     pillText: [],
     filterItems: filterItems
   };
+
+  selectTyre = (number: number, EAN: string) => {
+    console.log("you have picked" + number + "of" + EAN);
+  };
+
   selectItem = (text: string, isSelected: boolean, key: string) => {
     const selected = _.findWhere(this.state.filterItems, { text: text });
     selected.isSelected = !selected.isSelected;
@@ -33,7 +38,7 @@ export default class TyreResultsScene extends Component<{}, State> {
         this.removePill(text, "drop");
       } else {
         this.setState({
-          pillText: _.uniq([text, ...this.state.pillText])
+          pillText: [text, ...this.state.pillText]
         });
       }
     }
@@ -74,13 +79,15 @@ export default class TyreResultsScene extends Component<{}, State> {
           <Col xl="12" sm="12" md="4" lg="6" xl="8">
             <h3
               style={{
-                flex: "1"
+                flex: "1",
+                marginTop: "20px",
+                marginBottom: "20px"
               }}
             >
               {`${tyreCard.length} tyres available`}
             </h3>
           </Col>
-          <Col xs="6" sm="6" md="4" lg="3" xl="2">
+          <Col xs="6" sm="6" md="4" lg="3" xl="2" className="dropdownTyre">
             <div
               style={{ marginRight: "10px" }}
               className={"dropdownSortMobile"}
@@ -101,7 +108,7 @@ export default class TyreResultsScene extends Component<{}, State> {
               />
             </div>
           </Col>
-          <Col xs="6" sm="6" md="4" lg="3" xl="2">
+          <Col xs="6" sm="6" md="4" lg="3" xl="2" className="dropdownTyre">
             <div style={{ marginLeft: "10px" }} className={"dropdownFilter"}>
               <Dropdown
                 dropdownText={`Filters (${
@@ -128,7 +135,16 @@ export default class TyreResultsScene extends Component<{}, State> {
         </Row>
         <Row>
           {tyreCard.map(tyre => (
-            <Col sm="12" md="6" lg="4" xl="3">
+            <Col
+              sm="12"
+              md="6"
+              lg="4"
+              xl="3"
+              style={{
+                justifyContent: "center",
+                display: "flex"
+              }}
+            >
               <TyreCard
                 visibleLogo={tyre.visibleLogo}
                 logo={tyre.logo}
@@ -143,6 +159,7 @@ export default class TyreResultsScene extends Component<{}, State> {
                 noiseRating={tyre.noiseRating}
                 speedRating={tyre.speedRating}
                 loadRating={tyre.loadRating}
+                onClick={() => this.selectTyre()}
               />
             </Col>
           ))}

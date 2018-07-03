@@ -3,11 +3,29 @@
 }
 
 .carCard {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
-.notCarLink {
+a.notCarLinkMobile p {
     color: var(--primary-color);
+    font-family: var(--font-family);
 }
 
-@media only screen and (min-width: 380px) {}
+.GDPR {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    margin-bottom: 20px;
+}
+
+.horizontalCarCard {
+    display: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .mobileCarCard {
+        display: none;
+    }
+    .horizontalCarCard {
+        display: flex;
+    }
+}

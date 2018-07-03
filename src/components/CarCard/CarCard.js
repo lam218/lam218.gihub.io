@@ -8,14 +8,14 @@ type Props = {
   carImg?: string,
   carDesc?: string,
   carList: [{ right: string, left: string }],
-  horizontalImg?: boolean
+  horizontal?: boolean
 };
 
 const CarCard = (props: Props) => (
   <div>
-    {props.horizontalImg ? (
+    {props.horizontal ? (
       <Card className="horizontal carCard" bodyClassName="bodyCarCard">
-        <img src={props.carImg} alt={props.carDesc} />
+        <img src={props.carImg} alt={props.carDesc} height={"150px"} />
         <ListGroupLR List={props.carList} lines />
       </Card>
     ) : (

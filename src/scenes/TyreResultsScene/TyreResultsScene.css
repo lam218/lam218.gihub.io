@@ -9,35 +9,54 @@
 */
 
 .container {
-  padding: 0px;
+    padding: 0px;
 }
 
 .pillContainer {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
-h1 {
-  margin-top: 30px;
-  font-size: var(--font-size-base);
-  font-weight: bold;
+.col h1 {
+    margin-top: 30px;
+    font-size: var(--font-size-base);
+    font-weight: bold;
 }
 
-h3 {
-  font-size: var(--font-size-base);
-  margin-top: 20px;
-  margin-bottom: 20px;
+.row h3 {
+    font-size: var(--font-size-base);
 }
 
 .dropdownSort {
-  display: none;
+    display: none;
 }
 
-@media only screen and (min-width: 600px) {
-  .dropdownSortMobile {
-    display: none;
-  }
-  .dropdownSort {
-    display: flex;
-  }
+@media only screen and (min-width: 576px) and (max-width: 924px) {
+    .dropdownSortMobile {
+        display: none;
+    }
+    .dropdownSort {
+        display: flex;
+    }
+    .col h1 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .row h3 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 924px) {
+    .col h1 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .row h3 {
+        font-size: 16px;
+    }
+}
+
+.dropdownTyre {
+    margin-bottom: 20px;
 }

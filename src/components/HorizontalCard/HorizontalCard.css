@@ -32,7 +32,7 @@ p {
   margin-bottom: 0px;
 }
 
-a p {
+a.link p {
   font-size: 10px;
   color: var(--primary-color);
   text-align: right;
@@ -116,7 +116,7 @@ a p {
   .carMessageOuter {
     display: flex;
   }
-  img {
+  .carMessageOuter img {
     margin-left: 40px;
   }
   .carMessage p {

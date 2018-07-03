@@ -34,7 +34,7 @@ storiesOf("Car Card", module)
   ))
   .add("horizontal car card with image(if we get it)", () => (
     <CarCard
-      horizontalImg
+      horizontal
       carImg={"https://cdn.euroncap.com/media/29355/hyundai-i30-359-235.jpg"}
       carList={[
         { right: "Hyundai", left: "Make" },
