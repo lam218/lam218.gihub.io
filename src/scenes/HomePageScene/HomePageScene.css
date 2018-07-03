@@ -1,0 +1,25 @@
+@media only screen and (min-width: 380px) {
+}
+
+.mainCard {
+  /* height: 10em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.mainDiv {
+}
+
+div.Label {
+  margin: 0;
+}
+
+div.Input {
+  margin: 0;
+}
+
+.searchButton {
+  margin: 0;
+  width: 100%;
+}
