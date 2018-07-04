@@ -20,7 +20,7 @@ export default class HomePageScene extends Component {
     const regValue = this.state.regValue;
     const postCodeValue = this.state.postCodeValue;
     const confirmedPostCodeValue = postCodeValue.match(
-      /^[a-zA-Z]{1,2}([0-9]{1,2}|[0-9][a-zA-Z])\s*[0-9][a-zA-Z]{2}$/
+      /([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))\s?[0-9][A-Za-z]{2})/g
     );
     console.log("This is the reg value", regValue);
     console.log("this is the postcode value", postCodeValue);
