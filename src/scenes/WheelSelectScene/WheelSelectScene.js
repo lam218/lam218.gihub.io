@@ -76,7 +76,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} lg={8}>
+          <Col>
             <h2>Which wheels does your car have?</h2>
             <p style={{ fontSize: "14px" }}>
               It's okay if you don't know off the top of your head. We've
@@ -87,7 +87,7 @@ export default class WheelSelectScene extends React.Component<{}, State> {
 
         <Row>
           {tyreOptions.map(tyre => (
-            <Col xs={12} md={6}>
+            <Col xs={12} sm={6} lg={4}>
               <TyreSizeCard
                 tyreSize={tyre.tyreSize}
                 wheelSize={tyre.wheelSize}
@@ -95,15 +95,20 @@ export default class WheelSelectScene extends React.Component<{}, State> {
               />
             </Col>
           ))}
-        </Row>
-        <Row>
           <Col lg={4}>
-            <p style={{ fontSize: "14px" }}>
-              If you're near you car, please have a look for the markings on the
-              side of it. Make sure the option you select here matched the one
-              on your tyres.
-            </p>
-            <div>Stock tyre image will go here</div>
+            <div className="tyre">
+              <div className="stockTyreImage">
+                Stock tyre image will go here
+              </div>
+              <p style={{ fontSize: "14px" }}>
+                If you're near you car, please have a look for the markings on
+                the side of it. Make sure the option you select here matched the
+                one on your tyres.
+              </p>
+              <div className="mobileTyreImage">
+                Stock tyre image will go here
+              </div>
+            </div>
           </Col>
         </Row>
 

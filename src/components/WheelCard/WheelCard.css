@@ -1,41 +1,41 @@
 .wheelCard .card {
-  max-width: 400px;
-  min-width: 200px;
+    max-width: 400px;
+    min-width: 200px;
 }
 
 .wheelCard .card .card-body .leftCard h1,
 h2 {
-  font-size: var(--font-size-lg);
-  font-weight: 600;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
 }
 
 .wheelCard .card .card-body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .wheelCard .card .card-body .leftCard {
-  flex: 1;
-  border-bottom: 1px solid var(--light-grey);
-  margin-bottom: 1.5em;
-  text-align: center;
+    flex: 1;
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 1.5em;
+    text-align: center;
 }
 
-@media (min-width: 960px) {
-  .wheelCard .card {
-    max-width: 800px;
-    min-width: 600px;
-  }
-  .wheelCard .card .card-body {
-    display: flex;
-    flex-direction: row;
-  }
-  .wheelCard .card .card-body .leftCard {
-    flex: 1;
-    border-right: 1px solid var(--light-grey);
-    border-bottom: 0px;
-    margin-right: 1.5em;
-    margin-bottom: 0px;
-    text-align: center;
-  }
+@media (min-width: 992px) {
+    .wheelCard .card {
+        max-width: 800px;
+        min-width: 600px;
+    }
+    .wheelCard .card .card-body {
+        display: flex;
+        flex-direction: row;
+    }
+    .wheelCard .card .card-body .leftCard {
+        flex: 1;
+        border-right: 1px solid var(--light-grey);
+        border-bottom: 0px;
+        margin-right: 1.5em;
+        margin-bottom: 0px;
+        text-align: center;
+    }
 }
