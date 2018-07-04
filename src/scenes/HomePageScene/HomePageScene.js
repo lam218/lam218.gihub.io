@@ -8,8 +8,13 @@ import Button from "../../components/Button/Button";
 export default class HomePageScene extends Component {
   state = {
     regValue: String,
-    postCodeValue: String
+    postCodeValue: String,
+    inputField: String
   };
+
+  componentDidMount() {
+    this.setState({ inputField: "Input" });
+  }
 
   onClick(e) {
     const regValue = this.state.regValue;
@@ -17,9 +22,11 @@ export default class HomePageScene extends Component {
     const confirmedPostCodeValue = postCodeValue.match(
       /^[a-zA-Z]{1,2}([0-9]{1,2}|[0-9][a-zA-Z])\s*[0-9][a-zA-Z]{2}$/
     );
+    console.log("This is the reg value", regValue);
+    console.log("this is the postcode value", postCodeValue);
 
     if (confirmedPostCodeValue === null) {
-      console.log("This is a bad post code");
+      this.setState({ inputField: "errorInput" });
     } else {
       console.log("This is a good post code");
     }
@@ -30,6 +37,7 @@ export default class HomePageScene extends Component {
   }
 
   onChangePostCodeInput(e) {
+    this.setState({ inputField: "Input" });
     this.setState({ postCodeValue: e.target.value });
   }
 
@@ -48,6 +56,7 @@ export default class HomePageScene extends Component {
             <Input
               placeholder="NP44 5TJ"
               onChange={e => this.onChangePostCodeInput(e)}
+              className={this.state.inputField}
             />
           </Label>
         </div>
